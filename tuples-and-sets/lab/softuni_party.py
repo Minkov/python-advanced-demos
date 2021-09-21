@@ -48,6 +48,8 @@ vip_guests = sorted([g for g in guest_list if is_vip(g)])
 
 regular_guests = sorted([g for g in guest_list if not is_vip(g)])
 
+regular_guests = sorted([g for g in guest_list if not g[0].isdigit()])
+
 print(len(guest_list))
 [print(g) for g in vip_guests]
 [print(g) for g in regular_guests]
