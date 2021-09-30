@@ -1,0 +1,3 @@
+## Relative paths
+
+# ../main.py
