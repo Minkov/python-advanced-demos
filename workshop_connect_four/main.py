@@ -3,15 +3,15 @@ from io import StringIO
 
 test_input = '''1
 1
-2
 3
+3
+4
+4
 2
-1
 2
 '''
 
-
-# sys.stdin = StringIO(test_input)
+sys.stdin = StringIO(test_input)
 
 
 def get_player_choice(player):
@@ -37,8 +37,6 @@ def get_left_win_condition_values(board, row_index, column_index, min_column_ind
     left_win_condition = [board[row_index][c] for c in range(column_index, min_column_index, -1)]
     return left_win_condition
 
-
-# ~~~~~ Break untill 20:20 ~~~~~
 
 def get_up_win_condition_values(board, row_index, column_index, min_row_index):
     values = [board[r][column_index] for r in range(row_index, min_row_index, -1)]
