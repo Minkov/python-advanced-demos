@@ -1,0 +1,11 @@
+certifi==2022.5.18.1
+charset-normalizer==2.0.12
+idna==3.3
+pkcs7==0.1.2
+pycryptodome==3.14.1
+PyP100==0.0.19
+requests==2.28.0
+urllib3==1.26.9
+
+pyfiglet~=0.8.post1
+termcolor~=1.1.0
